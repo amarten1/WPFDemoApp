@@ -18,11 +18,29 @@ namespace WPFDemoApp
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow
     {
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = Models.ViewModelContainer.MainWindowViewModel;
+        }
+
+        private void PageSelect_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            ListBoxItem item = (ListBoxItem)sender;
+
+            //ViewModelContainer.MainWindowViewModel.PageSelect(item.Name);
+
+            drawerHost.IsLeftDrawerOpen = false;
+        }
+
+        private void Settings_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            ListBoxItem item = (ListBoxItem)sender;
+
+            //ViewModelContainer.MainWindowViewModel.OpenSettings();
         }
     }
 }
