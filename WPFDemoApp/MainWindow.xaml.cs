@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPFDemoApp.Models;
 
 namespace WPFDemoApp
 {
@@ -31,7 +32,7 @@ namespace WPFDemoApp
         {
             ListBoxItem item = (ListBoxItem)sender;
 
-            //ViewModelContainer.MainWindowViewModel.PageSelect(item.Name);
+            ViewModelContainer.MainWindowViewModel.PageSelect(item.Name);
 
             drawerHost.IsLeftDrawerOpen = false;
         }
