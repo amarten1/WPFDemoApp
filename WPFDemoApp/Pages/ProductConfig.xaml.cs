@@ -24,7 +24,10 @@ namespace WPFDemoApp.Pages
         {
             InitializeComponent();
 
-            DataContext = new ViewModels.ProductConfigViewModel();
+            var dc = new ViewModels.ProductConfigViewModel();
+            DataContext = dc;
+            dc.UpdateAll();
+            
         }
 
         private void CheckIsNumeric(object sender, TextCompositionEventArgs e)
