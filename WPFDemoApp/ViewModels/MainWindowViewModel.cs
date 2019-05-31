@@ -67,6 +67,55 @@ namespace WPFDemoApp.ViewModels
         }
         #endregion
 
+        //settings dialog functions
+        #region settings dialog open
+        private bool _settingsDialogOpen = false;
+        public bool SettingsDialogOpen
+        {
+            get => _settingsDialogOpen;
+            set
+            {
+                if (_settingsDialogOpen != value)
+                {
+                    _settingsDialogOpen = value;
+                    RaisePropertyChangedEvent("SettingsDialogOpen");
+                }
+            }
+        }
+        #endregion
+
+        #region settings dialog content
+        private object _settingsDialogContent;
+        public object SettingsDialogContent
+        {
+            get => _settingsDialogContent;
+            set
+            {
+                if (_settingsDialogContent != value)
+                {
+                    _settingsDialogContent = value;
+                    RaisePropertyChangedEvent("SettingsDialogContent");
+                }
+            }
+        }
+        #endregion
+
+        #region open and close settings functions
+        public void OpenSettings()
+        {
+            SettingsDialogContent = new Pages.PaletteSelector()
+            {
+                Width = 800,
+                Height = 600
+            };
+            SettingsDialogOpen = true;
+        }
+        public void CloseSettings()
+        {
+            SettingsDialogOpen = false;
+        }
+        #endregion
+
         class ProductPages
         {
             public string Name { get; set; }

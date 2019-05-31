@@ -41,7 +41,7 @@ namespace WPFDemoApp
         {
             ListBoxItem item = (ListBoxItem)sender;
 
-            //ViewModelContainer.MainWindowViewModel.OpenSettings();
+            ViewModelContainer.MainWindowViewModel.OpenSettings();
         }
     }
 }

@@ -29,15 +29,15 @@
                                 <ListBox>
                                     <ListBoxItem x:Name="Welcome" Content="home" MouseUp="PageSelect_MouseUp" Margin="8,0,0,0"/>
                                 </ListBox>
-                                <Expander Header="form examples">
+                                <Expander Header="form example">
                                     <ListBox Margin="30,0,0,0">
                                         <ListBoxItem x:Name="ProductConfig" Content="product configurator" MouseUp="PageSelect_MouseUp"/>
-                                        <ListBoxItem x:Name="ProfileEdit" Content="profile editor" MouseUp="PageSelect_MouseUp"/>
+                                        
                                     </ListBox>
                                 </Expander>
                                 <Separator Margin="5"/>
                                 <ListBox>
-                                    <ListBoxItem x:Name="OpenQuotes" Content="open quotes" MouseUp="PageSelect_MouseUp" Margin="8,0,0,0"/>
+                                    <ListBoxItem x:Name="OpenQuotes" Content="open quotes" Margin="8,0,0,0"/>
                                 </ListBox>
                             </StackPanel>
                         </DockPanel>
