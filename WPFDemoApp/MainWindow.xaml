@@ -13,7 +13,7 @@
         TextElement.FontWeight="Medium"
         TextElement.FontSize="14"
         FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
-        Title="Material Demo App" Height="450" Width="800">
+        Title="Material Demo App" Height="722.269" Width="1118.908">
     <material:DialogHost x:Name="RootDialogHost" Identifier="RootDialogHost" DialogContent="{Binding SettingsDialogContent}" IsOpen="{Binding SettingsDialogOpen}">
         <material:DialogHost Identifier="RootBasicDialogHost">
             <material:DialogHost Identifier="LoginDialogHost" DialogContent="{Binding LoginDialogContent}" IsOpen="{Binding LoginDialogOpen}">
